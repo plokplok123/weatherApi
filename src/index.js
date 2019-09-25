@@ -1,4 +1,9 @@
-import { test } from './test';
-import './styles/main.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import 'normalize.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-console.log(test('test'))
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
